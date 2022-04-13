@@ -1,9 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
 
-
 :root{
     --background-accueil: #080A0C;
+    --background-boutton-application: #5DB6CE;
     --font-orbitron: 'Orbitron', sans-serif;
     --font-montserrat: 'Montserrat', sans-serif;
     --font-size-titre: 3.5rem;
@@ -17,10 +17,15 @@
     --full-width: 100%;
     --full-height: 100vh;
     --margin-width: 8vw;
+    --margin-width-case-interface: 15vw;
+    --margin-unset: unset;
     --75-height: 75vh;
     --padding-carte: 50px 0px;
+    --regular-weight: 500;
 }
+
 
 
 @import url(../style/Accueil-style.css);
 @import url(../style/Carte-style.css);
+@import url(../style/Autres-style.css);
