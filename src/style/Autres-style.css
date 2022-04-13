@@ -1,0 +1,111 @@
+div.padding-autres{
+    width: calc(var(--full-width) - (var(--margin-width) * 2));
+    height: auto;
+    margin: 0 var(--margin-width);
+}
+
+section.case-final-accueil{
+    width: var(--full-width);
+    height: fit-content;
+    /* background-color: aqua; */
+}
+
+h1.titre-final-accueil{
+    color: var(--color-text);
+    font-size: var(--font-size-sous-titre);
+    font-family: var(--font-montserrat);
+    margin: 75px 0;
+}
+
+div.case-bloc-interface{
+    width: calc(var(--full-width) - (var(--margin-width-case-interface) * 2));
+    height: fit-content;
+    margin: 0 var(--margin-width-case-interface);
+}
+
+div.case-bloc-interface div{
+    width: 35vw;
+    height: 290px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    box-shadow: 8px 8px 8px rgba(100,100,100,0.5);
+}
+
+div.case1{
+    /* background-color: grey; */
+    background-image: url(../assets/interface_faits_divers.png);
+}
+
+div.case2{
+    /* background-color: blue; */
+    transform: translate(20vw,-5vh);
+    background-image: url(../assets/interface_sante.png);
+}   
+
+div.case3{
+    background-color: pink;
+    transform: translate(5vw, -10vh);
+    background-image: url(../assets/interface_faits_divers.png);
+}
+
+div.application-case{
+    width: var(--full-width);
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+h2.titre-application{
+    color: var(--color-text);
+    font-family: var(--font-montserrat);
+    font-size: 2.15rem;
+}
+
+div.case-boutton-appli{
+    /* background-color: blue; */
+    width: var(--full-width);
+    height: 60px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    margin-top: 35px;
+}
+
+div.boutton-android,
+div.boutton-apple{
+    background-color: var(--background-boutton-application);
+    width: 150px;
+    height: 50px;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+
+div.continue-case{
+    width: var(--full-width);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: var(--padding-carte);
+}
+
+h3.titre-continue{
+    font-size: larger;
+    font-family: var(--font-montserrat);
+    color: var(--color-text);
+    font-weight: var(--regular-weight);
+    margin: var(--margin-unset);
+}
+
+h1.text-contact{
+    font-size: var(--font-size-sous-titre);
+    color: var(--color-text);
+    font-family: var(--font-montserrat);
+    font-weight: var(--regular-weight);
+    text-transform: var(--majuscule);
+    margin: var(--margin-unset);
+    cursor: pointer;
+}
