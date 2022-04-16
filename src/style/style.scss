@@ -9,6 +9,7 @@
     --font-size-titre: 3.5rem;
     --font-size-sous-titre: 2.5rem;
     --font-size-texte: 14px;
+    --font-size-first-letter: 4.5rem;
     --majuscule: uppercase;
     --capitalize: capitalize;
     --border-titre-majuscule: white 1px;
@@ -18,10 +19,12 @@
     --full-height: 100vh;
     --margin-width: 8vw;
     --margin-width-case-interface: 15vw;
+    --margin-width-contact: 20vw;
     --margin-unset: unset;
     --75-height: 75vh;
     --padding-carte: 50px 0px;
     --regular-weight: 500;
+    --width-image-icon-contact: 8vw;
 }
 
 
@@ -29,3 +32,4 @@
 @import url(../style/Accueil-style.css);
 @import url(../style/Carte-style.css);
 @import url(../style/Autres-style.css);
+@import url(../style/Contact-style.css);
