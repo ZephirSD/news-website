@@ -1,5 +1,6 @@
 import android from "../assets/icone/icon_android.png";
 import apple from "../assets/icone/icon_apple.png";
+import { Link } from "react-router-dom";
 
 function Autres() {
     return ( 
@@ -25,7 +26,7 @@ function Autres() {
             </div>
             <div className="continue-case">
                 <h3 className="titre-continue">Continuer vers</h3>
-                <h1 className="text-contact">contact</h1>
+                <h1 className="text-contact"><Link to="/contact">contact</Link></h1>
             </div>
         </div>
      );
