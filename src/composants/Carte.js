@@ -1,9 +1,5 @@
 import { baseAccueil } from "../assets/base/baseAccueilNews";
 import deviceIphone from "../assets/device-iphone.png";
-// import { Swiper, SwiperSlide } from "swiper/react";
-// import { Mousewheel } from "swiper";
-import "swiper/css";
-import "swiper/css/effect-fade";
 function Carte() {
   return (
     <div className="padding-carte">
