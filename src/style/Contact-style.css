@@ -58,4 +58,78 @@ div.grid_image p{
     margin: 0;
     color: var(--color-text);
     font-family: var(--font-montserrat);
+    width: var(--width-image-icon-contact);
+    text-align: center;
+}
+
+form.form-contact{
+    padding: 0;
+    margin-top: 65px;
+}
+
+div.div-form{
+    width: var(--full-width);
+    /* background-color: blue; */
+    display: flex;
+    flex-direction: column;
+    margin: var(--margin-top-bottom-form) 0;
+}
+
+div.grid-input-contact{
+    width: var(--full-width);
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-auto-rows: auto;
+    column-gap: 7vw;
+}
+
+div.div-form label{
+    font-family: var(--font-montserrat);
+    font-size: 1.5rem;
+    color: var(--color-text);
+}
+
+div.div-form input{
+    border-radius: 7px;
+    background-color: var(--color-text);
+    border: none;
+    height: var(--height-input-contact);
+    font-size: var(--font-size-input);
+    font-family: var(--font-montserrat);
+}
+
+div.div-form input:focus-visible{
+    outline: none;
+    border: none;
+}
+
+div.div-form textarea{
+    border-radius: 7px;
+    background-color: var(--color-text);
+    border: none;
+    height: var(--height-textarea-contact);
+    font-size: var(--font-size-input);
+    font-family: var(--font-montserrat);
+}
+
+div.div-form textarea:focus-visible{
+    outline: none;
+    border: none;
+}
+
+div.div-boutton{
+    width: var(--full-width);
+    display: flex;
+    justify-content: center;
+}
+
+button.boutton-envoyer{
+    background-color: var(--background-boutton-application);
+    border: none;
+    color: var(--color-text);
+    font-family: var(--font-montserrat);
+    font-size: var(--font-size-input);
+    padding: var(--padding-boutton-envoyer);
+    border-radius: 10px;
+    cursor: pointer;
 }
