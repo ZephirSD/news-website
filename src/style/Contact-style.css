@@ -90,7 +90,7 @@ div.div-form label{
 }
 
 div.div-form input{
-    border-radius: 7px;
+    border-radius: var(--border-radius-input);
     background-color: var(--color-text);
     border: none;
     height: var(--height-input-contact);
@@ -104,7 +104,7 @@ div.div-form input:focus-visible{
 }
 
 div.div-form textarea{
-    border-radius: 7px;
+    border-radius: var(--border-radius-input);
     background-color: var(--color-text);
     border: none;
     height: var(--height-textarea-contact);
@@ -115,6 +115,55 @@ div.div-form textarea{
 div.div-form textarea:focus-visible{
     outline: none;
     border: none;
+}
+
+div.div-grid-rgpd{
+    display: grid;
+    grid-template-columns: repeat(2,min-content);
+    column-gap: 20px;
+    grid-auto-rows: auto;
+    width: var(--full-width);
+    margin: var(--margin-top-bottom-form) 0;
+}
+
+div.grid1-rgpd{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+input[name="rgpd"]{
+    width: var(--width-checkbox);
+    height: var(--width-checkbox);
+    appearance: none;
+    background-color: var(--color-text);
+    margin: var(--margin-unset);
+    border: var(--border-checkbox);
+    border-radius: var(--border-radius-input);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+input[name="rgpd"]::before{
+    content: "";
+    width: var(--width-checked);
+    height: var(--width-checked);
+    transform: scale(0);
+    transition: ease-in-out 0.3s;
+    background-color: var(--background-accueil);
+    border-radius: 5px;
+}
+
+input[name="rgpd"]:checked::before{
+    transform: scale(1);
+}
+
+p.text-rgpd{
+    width: calc(50vw - var(--width-checkbox))!important;
+    color: var(--color-text);
+    font-family: var(--font-montserrat);
+    font-size: medium;
 }
 
 div.div-boutton{
