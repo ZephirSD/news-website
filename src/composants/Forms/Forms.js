@@ -20,6 +20,19 @@ function Textarea({label,name,maxLength}) {
     );
 }
 
+function Checkbox({type,name,text}) {
+    return ( 
+        <>
+            <div className="div-grid-rgpd">
+                <div className="grid1-rgpd">
+                    <input type={type} name={name}/>
+                </div>
+                <p className="text-rgpd">{text}</p>
+            </div>
+        </>
+    );
+}
+
 function Button({type,className,name,value}) {
     return ( 
         <>
@@ -30,4 +43,4 @@ function Button({type,className,name,value}) {
     );
 }
 
-export {Input,Textarea,Button}
+export {Input,Textarea,Checkbox,Button}
