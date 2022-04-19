@@ -24,12 +24,12 @@ function Contact() {
                         }
                     </div>
                     <form className="form-contact">
-                        <Input label='Email' type='email'/>
+                        <Input label='Email' type='email' name={'email'}/>
                         <div className="grid-input-contact">
-                            <Input label={'Nom'} type='text'/>
-                            <Input label={'Prenom'} type='text'/>
+                            <Input label={'Nom'} type='text' name={'nom'}/>
+                            <Input label={'Prenom'} type='text' name={'prenom'}/>
                         </div>
-                        <Input label='Numéro de téléphone' type='tel'/>
+                        <Input label='Numéro de téléphone' type='tel' name={'telephone'}/>
                         <Textarea label={'Commentaire'} name={'commentaire'} maxLength="100"/>
                         <Button type={'button'} className="boutton-envoyer" name={'envoyer'} value={'Envoyer'}/>
                     </form>
