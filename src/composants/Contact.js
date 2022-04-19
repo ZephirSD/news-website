@@ -1,7 +1,7 @@
 import { Link } from "react-router-dom";
 import { baseContact } from "../assets/base/baseContact";
 import fleche from  "../assets/fleche_back.png";
-import { Input,Textarea,Button } from "./Forms/Forms";
+import { Input,Textarea,Checkbox,Button } from "./Forms/Forms";
 
 function Contact() {
     return ( 
@@ -31,6 +31,7 @@ function Contact() {
                         </div>
                         <Input label='Numéro de téléphone' type='tel' name={'telephone'}/>
                         <Textarea label={'Commentaire'} name={'commentaire'} maxLength="100"/>
+                        <Checkbox type={'checkbox'} name="rgpd" text={'J\'accepte les conditions de confidentialité'}/>
                         <Button type={'button'} className="boutton-envoyer" name={'envoyer'} value={'Envoyer'}/>
                     </form>
                 </div>
