@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import { baseContact } from "../assets/base/baseContact";
 import fleche from  "../assets/fleche_back.png";
+import { Input,Textarea,Button } from "./Forms/Forms";
 
 function Contact() {
     return ( 
@@ -22,6 +23,16 @@ function Contact() {
                             ))
                         }
                     </div>
+                    <form className="form-contact">
+                        <Input label='Email' type='email'/>
+                        <div className="grid-input-contact">
+                            <Input label={'Nom'} type='text'/>
+                            <Input label={'Prenom'} type='text'/>
+                        </div>
+                        <Input label='Numéro de téléphone' type='tel'/>
+                        <Textarea label={'Commentaire'} name={'commentaire'} maxLength="100"/>
+                        <Button type={'button'} className="boutton-envoyer" name={'envoyer'} value={'Envoyer'}/>
+                    </form>
                 </div>
             </div>
         </>
