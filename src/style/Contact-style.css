@@ -52,6 +52,7 @@ div.grid_image{
 
 div.grid_image img{
     width: var(--width-image-icon-contact)!important;
+    pointer-events: none;
 }
 
 div.grid_image p{
