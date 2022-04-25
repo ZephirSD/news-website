@@ -3,7 +3,7 @@ function Input({label,type,name}) {
         <>
             <div className="div-form">
                 <label>{label}</label>
-                <input type={type} name={name}/>
+                <input type={type === "" ? "text" : type} name={name}/>
             </div>
         </> 
     );
@@ -25,7 +25,7 @@ function Checkbox({type,name,text}) {
         <>
             <div className="div-grid-rgpd">
                 <div className="grid1-rgpd">
-                    <input type={type} name={name}/>
+                    <input type={type === "" ? "checkbox" : type} name={name}/>
                 </div>
                 <p className="text-rgpd">{text}</p>
             </div>
@@ -37,7 +37,7 @@ function Button({type,className,name,value}) {
     return ( 
         <>
             <div className="div-boutton">
-                <button type={type} className={className} name={name}>{value}</button>
+                <button type={type === "" ? "submit" : type} className={className} name={name}>{value}</button>
             </div>  
         </>
     );
